@@ -1,11 +1,27 @@
 package CofeMachine;
 
+import java.util.ArrayList;
+import java.util.List;
 
-// *** Создать торговый кофейный автомат, напитки в автомате должны содержать следующие данные: 
-// наименование, объем, температура, цена.
-//  Проинициализировать несколько напитков в классе main и торговый автомат,
-//   воспроизвести логику продажи напитков. Сделать на основе ООП
+
 public class CofeMachine{
+    private List <Product> products =new ArrayList<>();
 
+    public CofeMachine addProduct(Product product){
+        products.add(product);
+        return this;
+
+    }
+@Override
+public String toString() {
+    StringBuilder res = new StringBuilder();
+    for(Product item: products){
+        res.append(item);
+        res.append("\n");
+    }
+
+    // TODO Auto-generated method stub
+    return res.toString();
+}
 
 }
