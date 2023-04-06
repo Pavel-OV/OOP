@@ -12,6 +12,17 @@ public class CofeMachine{
         return this;
 
     }
+
+
+    public Product searchProduct(String name) {
+        for(Product item: products){
+            if(item.getName().equals(name));{
+                
+            return item;
+            }
+        }
+       return null;     
+    }
 @Override
 public String toString() {
     StringBuilder res = new StringBuilder();
