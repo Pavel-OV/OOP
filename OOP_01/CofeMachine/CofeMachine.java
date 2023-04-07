@@ -6,6 +6,7 @@ import java.util.List;
 
 public class CofeMachine{
     private List <Product> products =new ArrayList<>();
+    private double maney;
 
     public CofeMachine addProduct(Product product){
         products.add(product);

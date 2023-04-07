@@ -1,16 +1,30 @@
 package CofeMachine;
 
 public class Product {
-    private double price;
-    private String name;
+    private String name;    
     private Integer volume;
     private Integer temperature;
+    private String  supplement;
+    private double price;
+   
+    private Integer quantity;  // количество товаров
 
 
-    public Product(String name, Integer volume,double price) {
+    
+
+
+    public Product(String name, Integer volume,Integer temperature, double price) {
         this.price = price;
         this.name = name;
         this.volume=volume;
+        this.temperature=temperature;
+    }
+     
+    
+    
+
+    public void setSupplement(String supplement) {
+        this.supplement = supplement;
     }
 
 
@@ -31,6 +45,13 @@ public class Product {
         this.name = name;
     }
 
+   
+    
+    public String getSupplement() {
+        return supplement;
+    }
+
+
     public Integer getVolume() {
         
         return volume;
@@ -50,7 +71,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s : %s мл % .2f p.", name,volume, price);
+        return String.format("%s : %s мл, температура напитка %s  - % .2f p.", name,volume, temperature,price);
 
     }
 
