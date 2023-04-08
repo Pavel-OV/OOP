@@ -1,17 +1,25 @@
 package VendingMachine;
 
 public class Chocolate extends Product {
-    private String taste;
+    private String te;
 
-    public Chocolate(String name, Integer wt, double price) {
-        super(name, price,wt);
-        this.taste = taste;
+    public Chocolate(String name, String te,Integer wt, double price) {
+        super(name, price, wt);
+        this.te = te;
     }
+
+    // public String getTaste() {
+    // return taste;
+    // }
+
+    // public void setTaste(String taste) {
+    // this.taste = taste;
+    // }
 
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return String.format("", taste, super.toString());
+        return String.format("%s,%s",  super.toString(),te);
     }
 
 }

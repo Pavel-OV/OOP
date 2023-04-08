@@ -41,6 +41,6 @@ public class Product {
     @Override
     public String toString() {
         
-        return String.format("%s %s % .2f p",name, wt, price);
+        return String.format("Продукт %s вес %s гр. цена %.2f p",name, wt, price);
     }
 }
