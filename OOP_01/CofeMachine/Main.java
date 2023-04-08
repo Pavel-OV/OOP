@@ -6,19 +6,23 @@ package CofeMachine;
 public class Main {
     public static void main(String[] args) {
         CofeMachine mart = new CofeMachine();
+        System.out.println("До продажи в автомате находится  ");
         
-        mart.addProduct(new Product("горячий шоколад",300,95, 90 ))
+        mart.addProduct(new Product("Горячий шоколад",300,95, 90 ))
             .addProduct(new Cofe("Американо",300,98,50))
-            .addProduct(new Cofe("Эспрессо",100,98,50))
-            .addProduct(new Product("Чай",300, 45,98))
-            .addProduct(new Product("Кипяток",300,98,20))
+            .addProduct(new Cofe("Эспрессо",100,98,40))
+            .addProduct(new Product("Чай",300, 98,30))
+            .addProduct(new CofeMilkSupplement("Капучино","ваниль",300,98,85))
             .addProduct(new CofeMilk("c молоком",300,98,75))
             .addProduct(new TeaSupplement("чай","С мятой",300,99,30));
 
 
         System.out.println(mart);
-        System.out.println(  mart.searchProduct("горячий шоколад"));
-        
+        System.out.println("Выбераем из списка ");
+        System.out.println( mart.searchProduct("горячий шоколад"));
+        System.out.println("Покупаем ");
+        System.out.println(mart.sellProduct("горячий шоколад"));
+        System.out.println(mart);
     }
 }
 // cappuccino

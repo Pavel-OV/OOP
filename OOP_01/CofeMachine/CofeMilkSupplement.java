@@ -8,14 +8,7 @@ public class CofeMilkSupplement extends CofeMilk{
 
     }
 
-    public String getSupplement() {
-        return supplement;
-    }
-
-    public void setSupplement(String supplement) {
-        this.supplement = supplement;
-    }
-
+   
     @Override
     public String toString() {
         return String.format("%s %s",supplement,super.toString());
