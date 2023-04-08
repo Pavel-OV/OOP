@@ -5,12 +5,13 @@
 // включить эти классы в VendingMachine,
 //  вывести список товаров из VendingMachine
 package VendingMachine;
-public class Main{
+
+public class Main {
     public static void main(String[] args) {
-        VendingMachine mart = new VendingMachine:
-        mart.addProduct(new Product("null", 40))
-        .addProduct(new Chocolate);
-        System.out.println(searchPpoduct("hfhhf"));
+        VendingMachine mart = new VendingMachine();
+        mart.addProduct(new Product("Круaсан", 160, 220))
+                .addProduct(new Chocolate("Шоколад", 100, 95, "горький"));
+        System.out.println(mart);
 
     }
 }
