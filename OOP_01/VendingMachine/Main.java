@@ -13,11 +13,13 @@ public class Main {
         mart.addProduct(new Product("Круaсан", 160, 220))
                 .addProduct(new Product("Сникерс", 40, 45))
                 .addProduct(new Chocolate("Шоколад","Фундук",300,20))
-                .addProduct(new Chocolate("Шоколад","Изюм",180,95));
+                .addProduct(new Milk("Первый вкус",89,1000));
         System.out.println(mart);
-        
+        System.out.println("Ищем товар и его покупаем в случае наличея");
+       
         System.out.println(mart.searchPruduct("Круaсан"));
-        System.out.println(mart.searchPruduct("Шоколад"));
+        System.out.println("");
+        System.out.println();
         mart.sell("Круaсан");
         System.out.println(mart);
 
