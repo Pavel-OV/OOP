@@ -50,7 +50,9 @@ public class Product {
         this.name = name;
     }
 
-   
+    public Integer getQuantity(){
+        return quantity;
+    }
     
     public String getSupplement() {
         return supplement;
@@ -76,7 +78,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s : %s мл, температура напитка %s  - % .2f p. колличества % шт ", 
+        return String.format("%s : %s мл, температура напитка %s  - % .2f p. колличества %s шт ", 
         name,volume, temperature,price, quantity);
 
     }
