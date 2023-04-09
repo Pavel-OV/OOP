@@ -13,15 +13,20 @@ public class Product {
     
 
 
-    public Product(String name, Integer volume,Integer temperature, double price) {
+    public Product(String name, Integer volume,Integer temperature, double price,Integer quantity) {
         this.price = price;
         this.name = name;
         this.volume=volume;
         this.temperature=temperature;
+        this.quantity= quantity;
     }
      
     
     
+    public boolean setQuantity(){
+        quantity--;
+        return quantity>0;
+    }
 
     public void setSupplement(String supplement) {
         this.supplement = supplement;
@@ -71,7 +76,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s : %s мл, температура напитка %s  - % .2f p.", name,volume, temperature,price);
+        return String.format("%s : %s мл, температура напитка %s  - % .2f p. колличества % шт ", 
+        name,volume, temperature,price, quantity);
 
     }
 

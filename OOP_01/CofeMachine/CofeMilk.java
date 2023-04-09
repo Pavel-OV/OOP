@@ -3,8 +3,8 @@ package CofeMachine;
    public class CofeMilk extends Cofe{
    
 
-    public CofeMilk (String name,Integer volume,Integer temperature, double price){
-        super(name, volume,temperature, price);
+    public CofeMilk (String name,Integer volume,Integer temperature, double price,Integer quantity){
+        super(name, volume,temperature, price,  quantity);
     }
 
     @Override

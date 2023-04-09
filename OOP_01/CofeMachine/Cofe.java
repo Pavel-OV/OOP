@@ -3,8 +3,8 @@ package CofeMachine ;
 public class Cofe extends Product{
     
 
-    public Cofe(String name,Integer volume, Integer temperature,double  price) {
-        super(name,volume,temperature,price);
+    public Cofe(String name,Integer volume, Integer temperature,double  price,Integer quantity) {
+        super(name,volume,temperature,price, quantity);
         //TODO Auto-generated constructor stub
     }
     @Override

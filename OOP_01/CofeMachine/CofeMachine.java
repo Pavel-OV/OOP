@@ -3,46 +3,50 @@ package CofeMachine;
 import java.util.ArrayList;
 import java.util.List;
 
+public class CofeMachine {
+    private List<Product> products = new ArrayList<>();
+    private double maney = 0;
 
-public class CofeMachine{
-    private List <Product> products =new ArrayList<>();
-    private double maney=0;
-
-    public CofeMachine addProduct(Product product){
+    public CofeMachine addProduct(Product product) {
         products.add(product);
         return this;
 
     }
 
-
     public Product searchProduct(String name) {
-        for(Product item: products){
-            if(item.getName().equals(name));{
-                
-            return item;
+        for (Product item : products) {
+            if (item.getName().equals(name)) {
+                return item;
             }
         }
-       return null; 
+        return null;
     }
-       public Product sellProduct(String name) {
+
+    public Product sellProduct(String name) {
         Product target = searchProduct(name);
-        this.maney+=target.getPrice();
-        return target;        
-       }    
-    
-@Override
-public String toString() {
-    StringBuilder res = new StringBuilder();
-    for(Product item: products){
-        res.append(item);
-        res.append("\n");
+        try {
+            this.maney += target.getPrice();
+            if(!target.setQuantity()){
+                products.remove(target);
+            }
+        } catch (Exception e) {
+            System.out.println("Товар не найден");
+        }
+        return target;
     }
 
-    res.append(String.format("\nВ автомате находится %.2f p", maney));
+    @Override
+    public String toString() {
+        StringBuilder res = new StringBuilder();
+        for (Product item : products) {
+            res.append(item);
+            res.append("\n");
+        }
 
-    // TODO Auto-generated method stub
-    return res.toString();
-    
-}
+        res.append(String.format("\nВ автомате сейчас %.2f p", maney));
+
+        return res.toString();
+
+    }
 
 }
