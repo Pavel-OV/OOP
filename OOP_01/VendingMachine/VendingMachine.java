@@ -37,7 +37,7 @@ public class VendingMachine {
         lst.append(item);
         lst.append("\n");        
        }
-        lst.append("В автомате находится "+maney +" p \n");
+        lst.append("В автомате сейчас "+maney +" p \n");
         return lst.toString();
     }
 }
