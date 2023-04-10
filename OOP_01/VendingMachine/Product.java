@@ -51,6 +51,6 @@ public class Product {
     @Override
     public String toString() {
         
-        return String.format("продукт %s вес %s гр. цена %.2f p колличество %s шт",name, wt, price, count);
+        return String.format("продукт %s вес %s гр. цена %.2f p ",name, wt, price);
     }
 }

@@ -18,7 +18,7 @@ public class Chocolate extends Product {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
+       
         return String.format("%s,%s",  super.toString(),te);
     }
 
