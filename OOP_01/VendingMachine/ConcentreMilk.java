@@ -2,8 +2,8 @@ package VendingMachine;
 
 public class ConcentreMilk  extends Product{
 
-    public ConcentreMilk(String name, double price, Integer wt) {
-        super(name, price, wt);
+    public ConcentreMilk(String name, double price, Integer wt,Integer count) {
+        super(name, price, wt,count);
     }
 
     @Override

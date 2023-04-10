@@ -3,8 +3,8 @@ package VendingMachine;
 public class Chocolate extends Product {
     private String te;
 
-    public Chocolate(String name, String te,Integer wt, double price) {
-        super(name, price, wt);
+    public Chocolate(String name, String te,Integer wt, double price,Integer count) {
+        super(name, price, wt, count);
         this.te = te;
     }
 

@@ -4,15 +4,21 @@ public class Product {
     private String name;
     private double price;
     private Integer wt;
+    private Integer count;
    
 
-    public Product(String name, double price,Integer wt) {
+    public Product(String name, double price,Integer wt, Integer count) {
         this.name = name;
         this.price = price;
         this.wt= wt;
+        this.count= count;
     }
 
-     
+    public boolean sellCount(){
+        this.count--;
+        return count>0;
+    }
+    
     public Integer getVolume() {
         return wt;
     }
@@ -22,6 +28,10 @@ public class Product {
     public String getName() {
         return name;
     }
+
+    // public Integer setCount(){
+    //     this.count;
+    // }
 
     public void setName(String name) {
         this.name = name;
@@ -41,6 +51,6 @@ public class Product {
     @Override
     public String toString() {
         
-        return String.format("продукт %s вес %s гр. цена %.2f p",name, wt, price);
+        return String.format("продукт %s вес %s гр. цена %.2f p колличество %s шт",name, wt, price, count);
     }
 }

@@ -2,8 +2,8 @@ package VendingMachine;
 
 public class Milk extends Product {
 
-    public Milk(String name, double price, Integer wt) {
-        super(name, price, wt);
+    public Milk(String name, double price, Integer wt,Integer count) {
+        super(name, price, wt, count);
         //TODO Auto-generated constructor stub
     }
 
