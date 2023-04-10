@@ -14,7 +14,9 @@ public class Main {
                 .addProduct(new Product("Сникерс", 40, 45,2))
                 .addProduct(new Chocolate("Шоколад","Фундук",300,20,5))
                 .addProduct(new Milk("Первый вкус",89,1000,1))
-                .addProduct(new ConcentreMilk("Сгущённое молоко",63,350,2));
+                .addProduct(new ConcentreMilk("Сгущённое молоко",63,350,2))
+                .addProduct(new Seeds("Семечки", 34,50,3))
+                .addProduct(new PumpkinSeeds("Семечки",45,50,1,"тыквенные"));
         System.out.println(mart);
         System.out.println("Ищем товар и его покупаем в случае наличия");
        

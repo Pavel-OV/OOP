@@ -21,17 +21,25 @@ public class Main {
         System.out.println("Выбераем из списка ");
         System.out.println(mart.searchProduct("Горячий шоколад"));
         System.out.println("Покупаем \nВыводится снова список товаров \n ");
-        mart.sellProduct("Горячий шоколад");
+        sellPrint(mart,"Горячий шоколад");
         System.out.println(mart+"\n");
         System.out.println("Ищем новый товар xлеб");
-        System.out.println(mart.sellProduct("Хлеб"));
+        sellPrint(mart,"Хлеб");
         System.out.println(mart);
         System.out.println("\nНам показалось мало, выбираем новый напиток");
         System.out.println(mart.searchProduct("Капучино"));
-        mart.sellProduct("Капучино");
+        sellPrint(mart,"Капучино");
         System.out.println("Покупаем \nВыводится снова список товаров \n ");
         System.out.println(mart);
+
     }
+    public static void sellPrint(CofeMachine productMachine, String nameProd){
+        try {
+            System.out.println(productMachine.sellProduct(nameProd));
+        } catch (Exception e) {
+            System.out.println("Тавар не найден");
+    }
+}
 }
 // cappuccino
 // hot chocolate

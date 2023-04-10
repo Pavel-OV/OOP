@@ -78,7 +78,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s : %s мл, температура напитка %s  - % .2f p. колличества %s шт ", 
+        return String.format("%s : %s мл, температура напитка %s  - % .2f p. колличествo %s шт ", 
         name,volume, temperature,price, quantity);
 
     }

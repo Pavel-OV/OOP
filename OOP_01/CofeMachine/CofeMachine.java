@@ -22,15 +22,16 @@ public class CofeMachine {
         return null;
     }
 
-    public Product sellProduct(String name) {
+    public Product sellProduct(String name) throws Exception {
         Product target = searchProduct(name);
         try {
             this.maney += target.getPrice();
             if(!target.setQuantity()){
                 products.remove(target);
             }
-        } catch (Exception e) {
-            System.out.println("Товар не найден");
+        } catch (NullPointerException e) {
+            throw new Exception("Товар не найден",e);
+            //System.out.println("Товар не найден");
         }
         return target;
     }
