@@ -1,3 +1,3 @@
-public class Aquarim {
+public abstract class Aquarim {
     
 }
