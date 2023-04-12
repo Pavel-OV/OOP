@@ -5,4 +5,14 @@ public class Platypus  extends Mammal {
         
     }
     
+@Override
+public String speak(){
+    return "Буль булт"; 
+}
+
+@Override
+public String feed() {
+   
+    return "Буль булт";
+}
 }

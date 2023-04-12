@@ -1,4 +1,4 @@
-package OOP_02;
+
 // Создать интерфейс, скорость плаванья
 // Добавить новое животное, способное плавать
 // Все вышеуказанное создать согласно принципам ООП пройдённым на семинаре
@@ -7,7 +7,10 @@ package OOP_02;
 
 public class Main {
     public static void main(String[] args) {
-        
+        Zoo zoo = new Zoo();
+        zoo.addAnimals(new Cow("Бурёнка")) ;
+        zoo.nois();
+        zoo.shwoAll();
     }
     
 }
