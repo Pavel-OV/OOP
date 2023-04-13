@@ -1,7 +1,10 @@
+package Aquarim;
+import Vertebrata;
+
 public abstract class Amphibia extends Vertebrata {
 //cvakushka
-    public Amphibia(String name) {
-        super(name);
+    public Amphibia(String title) {
+        super(title);
        
     }
     @Override
