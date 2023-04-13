@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Zoo
 {
-private List <Animmal>animals= new ArrayList<>();
+private List <Animal>animals= new ArrayList<>();
 
     // public Zoo(List <Animmal> animals){
     //     this.animals=animals;
@@ -12,17 +12,17 @@ private List <Animmal>animals= new ArrayList<>();
     // public Zoo(String name) {
     //     super(name);
     // }
- public void addAnimals(Animmal newAnimal ){
+ public void addAnimals(Animal newAnimal ){
     this.animals.add(newAnimal); }
 
     public void shwoAll(){
-        for(Animmal animal:this.animals){
+        for(Animal animal:this.animals){
             System.out.println(animal);
         }
     }
 
     public void nois(){
-        for(Animmal animmal: animals){
+        for(Animal animmal: animals){
             System.out.println(animmal.speak());
         }
     }

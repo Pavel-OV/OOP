@@ -1,4 +1,4 @@
-public abstract class Animmal {
+public abstract class Animal {
     private String name;
    // private boolean alive;
 
@@ -8,7 +8,7 @@ public abstract class Animmal {
 
 
 
-    public Animmal(String name) {
+    public Animal(String name) {
         this.name = name;
        // this.alive = alive;
     }
