@@ -8,8 +8,8 @@ public class Main {
     // Синий флоридский рак
     public static void main(String[] args) {
         Aquarim creaturs = new Aquarim();
-        creaturs.addCreaturs(new Crustacea("Синий флоридский рак"));
+        creaturs.addCreaturs(new Crustacea("Синий флоридский рак",5));
         creaturs.shwoCreatursAll();
-        System.out.println(creaturs+"hhhh");
+       
     }
 }

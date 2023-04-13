@@ -1,26 +1,21 @@
 package Aquarim;
 
 public class Crustacea extends Bilateralia{
-    public Crustacea(String title) {
-        super(title);
+    public Crustacea(String title,Integer counter) {
+        super(title, counter);
+       
 
     }
 
    @Override 
    public String movement(){
-    return "Ползает и пятится задом";
+    return "ползает и пятится задом";
    }
-   @Override 
-   public String weight(){
-    return "Ползает и пятится задом";
-   }
-   @Override 
-   public String counter(){
-    return "Ползает и пятится задом";
-   }
+  
+   
    @Override 
    public String feed(){
-    return "Ползает и пятится задом";
+    return "всё : живое, мёртвое, растительность";
    }
 
 	}
