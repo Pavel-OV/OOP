@@ -8,8 +8,11 @@
 public class Main {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
-        zoo.addAnimals(new Cow("Бурёнка")) ;
-        zoo.nois();
+        zoo.addAnimals(new Cow("Бурёнка"));
+         zoo.addAnimals(new Bear("Михайло Потапыч"));
+           zoo.addAnimals(new Platypus("Утконос"));
+           zoo.addAnimals(new Goat("Маня"));
+        zoo.noise();
         zoo.shwoAll();
     }
     

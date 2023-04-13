@@ -13,6 +13,6 @@ public String speak(){
 @Override
 public String feed() {
    
-    return "Буль булт";
+    return "Трава, рвба";
 }
 }

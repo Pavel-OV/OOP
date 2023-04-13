@@ -1,4 +1,4 @@
-public abstract  class Predator extends Сreature {
+public abstract  class Predator extends Animal {
 
     public Predator(String name) {
         super(name);

@@ -8,4 +8,8 @@ public class Bear extends Predator {
     public String speak(){
         return"РРРРР";
     }
+    @Override
+    public String feed(){
+        return "всеяден: мясо, ягоды";
+    }
 }

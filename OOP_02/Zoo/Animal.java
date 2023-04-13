@@ -1,9 +1,9 @@
-public abstract class Animal {
+public abstract class Animal implements Speakrable {
     private String name;
    // private boolean alive;
 
     
-    public abstract String  speak();
+   
     public abstract String feed();
 
 
@@ -16,9 +16,9 @@ public abstract class Animal {
     @Override
     public String toString() {
         StringBuilder lst = new StringBuilder();
-        lst.append(String.format("Кличка животного %s",name))
-            .append(String.format("ест пищу %s",this.feed()))
-            .append(String.format("издаёт звуки %s",this.speak()));
+        lst.append(String.format("Кличка животного %s\n",name))
+            .append(String.format("ест пищу %s\n",this.feed()))
+            .append(String.format("издаёт звуки %s\n",this.speak()));
        
         return lst.toString();
     }
