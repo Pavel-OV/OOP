@@ -1,4 +1,4 @@
-public class Bear extends Predator {
+public class Bear extends Predator implements Walkable {
 
     public Bear(String name) {
         super(name);
@@ -12,4 +12,9 @@ public class Bear extends Predator {
     public String feed(){
         return "всеяден: мясо, ягоды";
     }
+    @Override
+    public int speed() {
+      return 60;
+    }
+    
 }

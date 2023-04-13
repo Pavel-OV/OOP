@@ -1,4 +1,4 @@
-public class Platypus  extends Mammal {
+public class Platypus  extends Mammal implements Walkable {
 
     public Platypus(String name) {
         super(name);
@@ -14,5 +14,10 @@ public String speak(){
 public String feed() {
    
     return "Трава, рвба";
+}
+
+@Override
+public int speed() {
+   return 7;
 }
 }

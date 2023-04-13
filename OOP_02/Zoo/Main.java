@@ -11,7 +11,9 @@ public class Main {
         zoo.addAnimals(new Cow("Бурёнка"));
          zoo.addAnimals(new Bear("Михайло Потапыч"));
            zoo.addAnimals(new Platypus("Утконос"));
-           zoo.addAnimals(new Goat("Маня"));
+           zoo.addAnimals(new Goat("Коза Маня"));
+           zoo.addAnimals(new Woof("Волчара Серый"));
+           zoo.addAnimals(new Bat(" Серый"));
         zoo.noise();
         zoo.shwoAll();
     }
