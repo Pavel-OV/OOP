@@ -9,7 +9,7 @@ public String speak(){
     return "УУУУУУ";
 }
 @Override
-public int speed() {
+public int runSpeed() {
    return 40;
 }
 }

@@ -1,7 +1,10 @@
 public class Bear extends Predator implements Walkable {
 
-    public Bear(String name) {
+    private int speed;
+
+    public Bear(String name, int speed) {
         super(name);
+        this.speed =speed;
         
     }
     @Override
@@ -13,8 +16,8 @@ public class Bear extends Predator implements Walkable {
         return "всеяден: мясо, ягоды";
     }
     @Override
-    public int speed() {
-      return 60;
+    public int runSpeed() {
+      return speed;
     }
     
 }

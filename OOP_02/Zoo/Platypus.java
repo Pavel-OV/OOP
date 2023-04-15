@@ -17,7 +17,7 @@ public String feed() {
 }
 
 @Override
-public int speed() {
+public int runSpeed() {
    return 7;
 }
 }

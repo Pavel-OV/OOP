@@ -11,10 +11,10 @@ public class Bat extends Predator implements Flyable {
 
     @Override
     public String speak() {
-       return "ssssss";
+       return "пииииии";
     }
     @Override
-    public int speed(){
+    public int flySpeed(){
         return 70;
     }
 }

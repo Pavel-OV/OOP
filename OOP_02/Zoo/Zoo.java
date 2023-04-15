@@ -37,7 +37,7 @@ public class Zoo {
         return res;
     }
     private List<Walkable> runners(){
-        List<Walkable> ranner = new ArrayList<>(null);
+        List<Walkable> ranner = new ArrayList<>();
         for(Animal animal:animals){
             if(animal instanceof Walkable){     //проверка на исключение не ходячих
             ranner.add((Walkable) animal);
@@ -45,7 +45,37 @@ public class Zoo {
         }
         return ranner;
         }
-        public Animal
+        public Animal championByRun(){
+            List<Walkable> participant = runners();
+            Walkable champion = participant.get(0);
+            for (Walkable runners : participant) {
+                if(champion.runSpeed() < runners.runSpeed()){
+                    champion=runners ;               }
+                
+            }
+
+            return (Animal)champion;
+        }
+        private List<Flyable> flyners(){
+            List<Flyable> flyner = new ArrayList<>();
+            for(Animal animal:animals){
+                if(animal instanceof Flyable){     //проверка на исключение не ходячих
+                flyner.add((Flyable) animal);
+            }
+            }
+            return flyner;
+            }
+            public Animal championByFly(){
+                List<Flyable> participant = flyners();
+                Flyable champion = participant.get(0);
+                for (Flyable flyners : participant) {
+                    if(champion.flySpeed() < flyners.flySpeed()){
+                        champion=flyners ;               }
+                    
+                }
+    
+                return (Animal)champion;
+            }
 
     }
 

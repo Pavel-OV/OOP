@@ -1,4 +1,4 @@
-public class Goat  extends Verbivore implements Walkable{
+public class Goat  extends Herbivore implements Walkable{
 
     public Goat(String name) {
         super(name);
@@ -9,7 +9,7 @@ public class Goat  extends Verbivore implements Walkable{
     }
 
     @Override
-    public int speed() {
+    public int runSpeed() {
         return 15;
     }
 }
