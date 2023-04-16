@@ -1,8 +1,8 @@
 package Aquarim;
 
 public class Crustacea extends Bilateralia{
-    public Crustacea(String title,Integer counter) {
-        super(title, counter);
+    public Crustacea(String title) {
+        super(title);
        
 
     }

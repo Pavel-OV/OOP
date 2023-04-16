@@ -7,6 +7,12 @@ public abstract class Vertebrata extends Bilateralia{
         super(title);
        
     }
+    
+    @Override
+    public String movement() {
+        
+        return "Плавает";
+    }
  
     // @Override
     // public String movement() {

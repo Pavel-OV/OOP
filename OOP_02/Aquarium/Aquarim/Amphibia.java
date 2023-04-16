@@ -1,5 +1,4 @@
 package Aquarim;
-import Vertebrata;
 
 public abstract class Amphibia extends Vertebrata {
 //cvakushka
@@ -11,4 +10,9 @@ public abstract class Amphibia extends Vertebrata {
     public String feed(){
         return"насикомые";
     }
-}
+    @Override
+    public String movement() {
+       
+        return "Прыгает";
+    }
+} 
