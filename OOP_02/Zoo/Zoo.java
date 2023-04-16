@@ -77,5 +77,49 @@ public class Zoo {
                 return (Animal)champion;
             }
 
+            private List<Divesable> divners(){
+            List<Divesable> divner = new ArrayList<>();
+            for(Animal animal:animals){
+                if(animal instanceof Divesable){     //проверка на исключение не ходячих
+                    divner.add((Divesable) animal);
+            }
+            }
+            return divner;
+            }
+            public Animal championByDiv(){
+                List<Divesable> participant = divners();
+                Divesable champion = participant.get(0);
+                for (Divesable divners : participant) {
+                    if(champion.dives()< divners.dives()){
+                        champion=divners ;               }
+                    
+                }
+    
+                return (Animal)champion;
+            }
+            
+            private List<Floatable> swimners(){
+                List<Floatable> divner = new ArrayList<>();
+                for(Animal animal:animals){
+                    if(animal instanceof Floatable){     //проверка на исключение не ходячих
+                        divner.add((Floatable ) animal);
+                }
+                }
+                return divner;
+                }
+                public Animal championBySwimm(){
+                    List<Floatable> participant = swimners();
+                    Floatable  champion = participant.get(0);
+                    for (Floatable  divners : participant) {
+                        if(champion.swimmSpeed()< divners.swimmSpeed()){
+                            champion=divners ;               }
+                        
+                    }
+        
+                    return (Animal)champion;
+                }
+    
+
+
     }
 

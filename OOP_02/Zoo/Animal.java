@@ -16,9 +16,9 @@ public abstract class Animal implements Speakrable {
     @Override
     public String toString() {
         StringBuilder lst = new StringBuilder();
-        lst.append(String.format("Кличка животного %s\n",name))
-            .append(String.format("ест пищу %s\n",this.feed()))
-            .append(String.format("издаёт звуки %s\n",this.speak()));
+        lst.append(String.format("Кличка животного: %s\n",name))
+            .append(String.format("ест пищу: %s\n",this.feed()))
+            .append(String.format("издаёт звуки  %s\n",this.speak()));
        
         return lst.toString();
     }
