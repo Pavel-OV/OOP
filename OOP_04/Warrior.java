@@ -9,17 +9,18 @@ public abstract class Warrior extends Persanage{
         super(name, hp);
         this.weapon=weapon;
     }
-    public int hars(){
+    public int harm(){
         boolean isHit = rnd.nextBoolean();
         int damage=0;
         if(isHit){
             damage = rnd.nextInt(weapon.damage()+1);
             }
         return damage;
-        
-
-    }
+        }
    
+        public void reduse(int damage){
+            
+        }
     @Override
     public String toString() {
         StringBuilder lst =new StringBuilder();
