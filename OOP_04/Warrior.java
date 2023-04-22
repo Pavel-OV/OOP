@@ -3,13 +3,15 @@ package OOP_04;
 import java.util.Random;
 
 public abstract class Warrior extends Persanage{
-    private static Random rnd = new Random();
-    private Weapon weapon;
-    public  Warrior(String name, int hp, Weapon weapon){
+    protected static Random rnd = new Random();
+    protected Weapon weapon;
+    private Armour armour;
+    public  Warrior(String name, int hp, Weapon weapon, Armour armour ){
         super(name, hp);
         this.weapon=weapon;
+        this.armour=armour;
     }
-    public int harm(){
+    public int harm(){                           // попал в цель
         boolean isHit = rnd.nextBoolean();
         int damage=0;
         if(isHit){
@@ -21,6 +23,10 @@ public abstract class Warrior extends Persanage{
         public void reduse(int damage){
             
         }
+
+        // public int reflection(){
+        //     return reflection;
+        // }    //отражение урона
     @Override
     public String toString() {
         StringBuilder lst =new StringBuilder();
