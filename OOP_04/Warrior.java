@@ -2,14 +2,14 @@ package OOP_04;
 
 import java.util.Random;
 
-public abstract class Warrior extends Persanage{
+public abstract class Warrior <T extends Weapon> extends Persanage{
     protected static Random rnd = new Random();
-    protected Weapon weapon;
+    protected T weapon;
     private Armour armour;
-    public  Warrior(String name, int hp, Weapon weapon, Armour armour ){
+    public  Warrior(String name, int hp, T weapon){
         super(name, hp);
         this.weapon=weapon;
-        this.armour=armour;
+        //this.armour=armour;
     }
     public int harm(){                           // попал в цель
         boolean isHit = rnd.nextBoolean();
@@ -33,7 +33,8 @@ public abstract class Warrior extends Persanage{
         lst.append("Воин \n")
             .append(getName())
             .append(String.format("\n\t Hp: %s", getHp()))
-            .append(String.format("\n\t Вооружение %s", this.weapon));
+            .append(String.format("\n\t Вооружение %s", this.weapon))
+            .append(String.format("\n\t Защита %s", this.armour));
         
         return lst.toString();
     }

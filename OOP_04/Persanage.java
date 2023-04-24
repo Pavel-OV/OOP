@@ -8,7 +8,7 @@ public abstract class Persanage{
         this.name = name;
         this.hp = hp;
     }
-    private boolean isAlive(){
+    public boolean isAlive(){
        return hp>0;
 
     }

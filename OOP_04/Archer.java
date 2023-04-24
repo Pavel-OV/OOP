@@ -1,14 +1,20 @@
 package OOP_04;
 
-public class Archer  extends Warrior {
+public class Archer  extends Warrior<Throwing> {
 
-    public Archer(String name, int hp, Throwing weapon, Armour armour) {
-        super(name, hp, weapon, armour);
+    public Archer(String name, int hp, Throwing weapon) {
+        super(name, hp, weapon);
         
     }
+  
     public int range(){
-        return rnd.nextInt(((Throwing)this.weapon).range)+1;
+        return rnd.nextInt(this.weapon.range)+1;
 
+    }
+    @Override
+    public String toString() {
+      
+        return super.toString();
     }
     
 }
