@@ -20,7 +20,7 @@ public class Battle {
                 System.out.printf("Победитель:%s", attaker);
                 return attaker;
             }
-            System.out.printf("Воин %S наносит %d уронa \n у воина %s здоровья %s \n", attaker.getName(), attak,
+            System.out.printf("Воин %S наносит %d уронa \n у воина %s здоровья %s \n ", attaker.getName(), attak,
                     defender.getName(),defender.getHp());
             int response = defender.harm();
             attaker.reduceHp(response);
@@ -29,7 +29,7 @@ public class Battle {
                 System.out.printf("Победитель: %s", defender);
                 return defender;
             }
-            System.out.printf("Воин %S наносит ответный удар : %d уронa \n у воина %s оствлось здоровья %s\n",
+            System.out.printf("Воин %S наносит ответный удар : %d уронa \n у воина %s оствлось здоровья %s\n ",
                     defender.getName(),response, attaker.getName(), attaker.getHp());
         }
 

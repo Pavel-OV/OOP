@@ -43,6 +43,16 @@ public class Team<T extends Persanage> implements Iterable<T> {
         }
     }
     return max;
- }
-    
+
+}
+public int minProtect(){
+    int min =100;
+    for( T pers: this){
+        if( pers.protect.protection()<min)
+        {
+            min = pers.protect.protection();
+        }
+    }
+    return min;
+}
 }
