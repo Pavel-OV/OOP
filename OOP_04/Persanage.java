@@ -32,8 +32,8 @@ public abstract class Persanage {
     }
 
     public void reduceHp(int damage) {
-        if (this.protect.impactReflection()) { // отразить ли удар
-            int impactmitigation = rnd.nextInt(11);
+        if (this.protect.impactReflection()) {
+            int impactmitigation = rnd.nextInt(101);
             if (impactmitigation <= this.protect.armor()) {
                 damage -= this.protect.protection();
                 this.protect.reducedEndurance();

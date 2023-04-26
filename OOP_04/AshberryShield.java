@@ -2,7 +2,7 @@ package OOP_04;
 
 public class AshberryShield extends Shield {
     public AshberryShield() {
-        super("щит из рябины", 25, 25, 15);
+        super("щит из рябины", 30, 20, 15);
     }
 
     @Override

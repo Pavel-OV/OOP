@@ -1,12 +1,12 @@
 package OOP_04;
 
 public interface ShieldProperties {
-    int endurance(); //прочность safetyMargin
+    int endurance();
 
-    void reducedEndurance(); // поглащение удара уменьшение причности safetyMarginReduce
-    int protection(); //защита
-    int armor(); //block Variant
-    boolean impactReflection();   //остается нетронутымisIntact
+    void reducedEndurance(); 
+    int protection(); 
+    int armor(); 
+    boolean impactReflection(); 
 
     
 }

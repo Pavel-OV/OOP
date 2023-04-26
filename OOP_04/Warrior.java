@@ -11,7 +11,7 @@ public abstract class Warrior <T extends Weapon ,S extends ShieldProperties> ext
         this.weapon=weapon;
         this.protect =protect;
     }
-    public int harm(){                           // попал в цель
+    public int harm(){                          
         boolean isHit = rnd.nextBoolean();
         int damage=0;
         if(isHit){
@@ -20,13 +20,9 @@ public abstract class Warrior <T extends Weapon ,S extends ShieldProperties> ext
         return damage;
         }
    
-        public void reduse(int damage){
-            
-        }
+       
 
-        // public int reflection(){
-        //     return reflection;
-        // }    //отражение урона
+      
     @Override
     public String toString() {
         StringBuilder lst =new StringBuilder();

@@ -20,8 +20,8 @@ public class Battle {
                 System.out.printf("Победитель:%s", attaker);
                 return attaker;
             }
-            System.out.printf("Воин %S наносит %d уронa \n у воина %s здоровья %s \n ", attaker.getName(), attak,
-                    defender.getName(),defender.getHp());
+            System.out.printf("Воин %S наносит %d уронa \n у воина %s здоровья %s \n прочность щита : %d \n", attaker.getName(), attak,
+                    defender.getName(),defender.getHp() ,defender.protect.endurance());
             int response = defender.harm();
             attaker.reduceHp(response);
             if (!attaker.isAlive()) {
@@ -29,8 +29,8 @@ public class Battle {
                 System.out.printf("Победитель: %s", defender);
                 return defender;
             }
-            System.out.printf("Воин %S наносит ответный удар : %d уронa \n у воина %s оствлось здоровья %s\n ",
-                    defender.getName(),response, attaker.getName(), attaker.getHp());
+            System.out.printf("\tВоин %S наносит ответный удар : %d уронa \n\t у воина %s оствлось здоровья %s\n\t прочность щита : %d \n",
+                    defender.getName(),response, attaker.getName(), attaker.getHp(), attaker.protect.endurance());
         }
 
     }
